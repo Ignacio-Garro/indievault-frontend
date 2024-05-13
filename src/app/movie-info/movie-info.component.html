@@ -1,0 +1,72 @@
+<!-- movie-info.component.html -->
+<div
+  class="h-screen w-screen text-white bg-gray-800 p-6 flex flex-col items-center justify-center"
+>
+  <div class="w-full max-w-5xl bg-gray-900 p-6 rounded-lg">
+    <div class="text-center mb-8">
+      <h1 class="text-3xl font-bold">NAME</h1>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <!-- Description -->
+      <div class="col-span-2">
+        <h2 class="text-2xl mb-4">Description</h2>
+        <p class="bg-gray-700 p-4 rounded">
+          This is the description of the movie. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+      </div>
+      <!-- Trailer -->
+      <div>
+        <h2 class="text-2xl mb-4">Trailer?</h2>
+        <div class="bg-gray-700 h-48 rounded flex items-center justify-center">
+          <span>Trailer Video</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-8">
+      <!-- Tabs -->
+      <div class="flex space-x-6 border-b border-gray-600 mb-4">
+        <button
+          class="pb-2 text-lg border-b-2 border-transparent focus:border-white"
+        >
+          Info
+        </button>
+        <button
+          class="pb-2 text-lg border-b-2 border-transparent focus:border-white"
+        >
+          Credits
+        </button>
+        <button
+          class="pb-2 text-lg border-b-2 border-transparent focus:border-white"
+        >
+          Reviews
+        </button>
+      </div>
+
+      <!-- Tab Content -->
+      <div>
+        <!-- This content will change based on the selected tab -->
+        <div class="bg-gray-700 p-4 rounded">
+          <p>Tab content goes here.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Filmmaker Profile -->
+      <div class="flex flex-col items-center">
+        <div
+          class="bg-gray-700 w-32 h-32 rounded-full mb-4 flex items-center justify-center"
+        >
+          <span>Profile</span>
+        </div>
+        <button class="bg-blue-600 py-2 px-6 rounded">Filmmaker Profile</button>
+      </div>
+      <!-- Play Movie -->
+      <div class="md:col-span-2 flex justify-center items-center">
+        <button class="bg-green-600 py-3 px-10 rounded">Play Movie</button>
+      </div>
+    </div>
+  </div>
+</div>
