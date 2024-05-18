@@ -1,0 +1,54 @@
+<div class="profile-info-container">
+    <div class="profile-image-container">
+        <a href="https://google.com">
+            <img class="rounded-image" src="assets/images/person.jpg" height="300" alt="A beautiful person">
+        </a>
+    </div>
+    <div class="profile-info">
+        <h1 class="profileName">Ignacio Garro</h1>
+        <div class="divider"></div>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod .</h3>
+    </div>
+    <p-button>upload</p-button>
+</div>
+    <div class="profile-content-container">
+        <p-carousel 
+        [value]="products" 
+        [numVisible]="4" 
+        [numScroll]="1" 
+        [circular]="false" 
+        [responsiveOptions]="responsiveOptions">
+            <ng-template let-product pTemplate="item" >
+                <div class="border-1 surface-border border-round m-2 p-3" >
+                    <div class="mb-3">
+                        <div class="relative mx-auto">
+                            <a href="google.com">
+                                <img 
+                                    src="assets/images/{{ product.image }}" 
+                                    [alt]="product.name" 
+                                    class="w-full border-round" />
+                            </a>
+                            <p-tag 
+                                value="product.price" 
+                                severity="getSeverity(product.inventoryStatus)" 
+                                class="absolute" 
+                                [ngStyle]="{ 'left.px': 5, 'top.px': 5 }">
+                            </p-tag>
+                        </div>
+                    </div>
+                    <div class="mb-3 font-medium">
+                        {{ product.name }}
+                    </div>
+                    <div class="flex justify-content-between align-items-center">
+                    <div class="mt-0 font-semibold text-xl">
+                        {{ '$' + product.price }}
+                    </div>
+                        <span class="icons">
+                            <p-button icon="pi pi-heart" severity="secondary" [outlined]="true" />
+                        </span>
+                    </div>
+                </div>
+            </ng-template>
+    </p-carousel>
+</div>
+
