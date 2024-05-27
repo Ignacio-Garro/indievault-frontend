@@ -13,36 +13,36 @@ import {TagModule} from "primeng/tag";
   styleUrl: './profile.component.css'
 })
 export class ProfileComponent {
-  products: Product[] = [
+  products: MovieProduct[] = [
     {
       name: 'movie 1',
       image: 'movie1.jpg',
       inventoryStatus: 'In Stock',
-      price: 50
+      imageUrl: 'youtube.com'
     },
     {
       name: 'movie 2',
       image: 'movie2.jpg',
       inventoryStatus: 'Out of Stock',
-      price: 70
+      imageUrl: 'google.com'
     },
     {
       name: 'movie 3',
       image: 'movie3.jpg',
       inventoryStatus: 'Out of Stock',
-      price: 80
+      imageUrl: 'google.com'
     },
     {
       name: 'movie 4',
       image: 'movie4.jpg',
       inventoryStatus: 'Out of Stock',
-      price: 80
+      imageUrl: 'google.com'
     },
     {
       name: 'movie 5',
       image: 'movie5.jpg',
       inventoryStatus: 'Out of Stock',
-      price: 80
+      imageUrl: 'google.com'
     },
     // Add more products as needed
   ];
@@ -66,11 +66,18 @@ export class ProfileComponent {
   ]
 }
 
-export interface Product  {
+export interface MovieProduct {
   name: string;
   image: string;
   inventoryStatus: string;
-  price: number;
+  imageUrl: string;
+}
+
+export interface ProfileInfo  {
+  name: string;
+  description: string;
+  profileImage: string;
+  //ListOfLikedMovies: MovieProduct[];
 }
 
 

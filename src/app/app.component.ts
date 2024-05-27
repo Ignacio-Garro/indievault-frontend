@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonModule } from 'primeng/button';
 import { ProfileComponent } from './profile/profile.component';
-import { Product } from './profile/profile.component';
+import { MovieProduct } from './profile/profile.component';
 import { MatIconModule } from '@angular/material/icon'
 
 @Component({
